@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'K2D-Regular' ;
+	src: url( '../font/k2d/K2D-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'K2D-Bold' ;
+	src: url( '../font/k2d/K2D-Bold.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'K2D-Medium' ;
+	src: url( '../font/k2d/K2D-Medium.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'K2D-Light' ;
+	src: url( '../font/k2d/K2D-Light.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Montserrat-Regular' ;
+	src: url( '../font/Montserrat/Montserrat-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Montserrat-Bold' ;
+	src: url( '../font/Montserrat/Montserrat-Bold.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Lato-Regular' ;
+	src: url( '../font/Lato/Lato-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'Lato-Bold' ;
+	src: url( '../font/Lato/Lato-Bold.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'OpenSans-Regular' ;
+	src: url( '../font/Open_Sans/OpenSans-Regular.ttf' ) format('truetype');	 
+}
+@font-face {
+	font-family: 'OpenSans-Bold' ;
+	src: url( '../font/Open_Sans/OpenSans-Bold.ttf' ) format('truetype');	 
+}
+$f_regular:'OpenSans-Regular';
+$f_bold:'OpenSans-Bold';

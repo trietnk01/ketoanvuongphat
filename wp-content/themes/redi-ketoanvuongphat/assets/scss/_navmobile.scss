@@ -1,0 +1,40 @@
+.mobile_navbar{
+	position: absolute;
+	top:35px;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	.bg-light{
+		background:transparent !important; 
+		.navbar-toggler{
+			border:0;		
+		}
+		.navbar-nav{
+			a{
+				color: $body_color;		
+				display: block;
+				padding: 10px 10px;	
+				text-transform: uppercase;	
+				font-family: $f_bold;			  
+			}	
+			ul{
+				padding-left: 0;
+			} 
+		} 
+		.navbar-collapse{
+			background-color:$logo_bg ;
+			margin-top:27px;
+		}
+		.sub-menu{
+			list-style: none;
+		}
+	}
+	.navbar{
+		padding: 0
+	}
+	.navbar-light{
+		.navbar-toggler-icon{
+			background-image: url('../img/nav-line.png');
+		}
+	}
+}

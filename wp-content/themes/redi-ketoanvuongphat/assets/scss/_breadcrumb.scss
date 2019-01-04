@@ -1,0 +1,22 @@
+.section-breadcrum{
+	background-color: #efefef;
+}
+.container-breadcrumb{
+	span{
+		a{
+			color:#1b1b18;
+
+			font-weight: 400;
+			&:hover{
+				// opacity: .7;
+			}
+		}
+	}
+}
+
+
+.breadcrumb-span-slash{
+	padding-left:5px;
+	padding-right:5px;
+	color:#ccc;
+}
