@@ -344,7 +344,12 @@
 					background-color: $menu_bg;
 					padding: 10px;
 				}
-			}				
+			}	
+			.register-notifycation{
+				margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+			}			
 		}
 	}
 }
@@ -946,7 +951,7 @@
 		}
 		.service-left-item{
 			float: left;
-			width: 30%;		
+			width:25%;		
 			@media(max-width: 740px){
 				width: 15%;
 			}

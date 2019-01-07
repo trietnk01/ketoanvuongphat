@@ -73,11 +73,12 @@ if($the_query->have_posts()){
 								$excerpt=wp_trim_words( get_the_excerpt($post_id), 20, '...' ) ;
 								$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
 								$price=get_field('op_news_service_price',$post_id);
+								$unit=get_field('op_news_service_unit',$post_id);
 								$date_post='';
 								$date_post=get_the_date('d/m/Y',@$post_id);      
 								if($k%2==0){
 									echo '<div class="row">';
-								}
+								}								
 								?>
 								<div class="col-md-6">
 									<div class="service-item">									
@@ -90,7 +91,13 @@ if($the_query->have_posts()){
 										</div>										
 										<div class="service-right-item">
 											<h3 class="service-right-title"><a href="<?php echo @$permalink; ?>"><?php echo wp_trim_words( @$title, 5,'') ; ?></a></h3>
-											<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/tháng</div>
+											<?php 
+											if(!empty($price)){
+												?>
+												<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/<?php echo @$unit; ?></div>
+												<?php
+											}
+											?>											
 											<div class="th-dk">
 												<div class="timhieu">
 													<a href="<?php echo @$permalink; ?>">Tìm hiểu</a>

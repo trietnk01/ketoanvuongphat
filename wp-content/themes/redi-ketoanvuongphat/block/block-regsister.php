@@ -20,7 +20,10 @@
 			</div>								
 			<div class="register-submit">
 				<a href="javascript:void(0);" onclick="registerNow(this);">Đăng ký ngay</a>
-			</div>		
+			</div>	
+			<div class="register-notifycation">
+				Chúng tôi sẽ liên hệ quý khách ngay sau khi nhận thông tin
+			</div>	
 			<div class="ajax_loader"></div>		
 			<div class="note">Cảm ơn đã đặt phòng tại khách sạn của chúng tôi . Chúng tôi sẽ liên hệ lại bạn trong thời gian sớm nhất.</div>    			
 		</form>

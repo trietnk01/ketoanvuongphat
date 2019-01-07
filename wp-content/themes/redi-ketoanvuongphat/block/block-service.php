@@ -3,7 +3,7 @@ $args = array(
 	'post_type' => 'post',  
 	'orderby' => 'id',
 	'order'   => 'DESC',  
-	'posts_per_page' => 4,        	
+	'posts_per_page' => 100,        	
 	'tax_query' => array(
 		array(
 			'taxonomy' => 'category',
@@ -25,6 +25,7 @@ if($the_query->have_posts()){
 			$title=get_the_title($post_id);
 			$excerpt=wp_trim_words( get_the_excerpt($post_id), 20, '...' ) ;
 			$price=get_field('op_news_service_price',$post_id);
+			$unit=get_field('op_news_service_unit',$post_id);
 			$featured_img=get_the_post_thumbnail_url($post_id, 'full'); 
 			$date_post='';
 			$date_post=get_the_date('d/m/Y',@$post_id);      
@@ -39,7 +40,13 @@ if($the_query->have_posts()){
 				</div>										
 				<div class="service-right-item">
 					<h3 class="service-right-title"><a href="<?php echo @$permalink; ?>"><?php echo wp_trim_words( @$title, 5,'') ; ?></a></h3>
-					<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/tháng</div>
+					<?php 
+											if(!empty($price)){
+												?>
+												<div class="service-price"><?php echo  p_wc_price_format_html2($price); ?>/<?php echo @$unit; ?></div>
+												<?php
+											}
+											?>	
 					<div class="th-dk">
 						<div class="timhieu">
 							<a href="<?php echo @$permalink; ?>">Tìm hiểu</a>
