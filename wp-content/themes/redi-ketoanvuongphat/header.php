@@ -37,7 +37,7 @@
 				<div class="col-lg-10">
 					<form method="POST" action="" class="s_frm_search" name="frm_search">
 						<div class="liu_search">
-							<input type="text" name="s" placeholder="Search" value="<?php echo @$_POST["s"]; ?>">
+							<input type="text" name="s" placeholder="Search" class="ktvp-txt-search" value="<?php echo @$_POST["s"]; ?>" autocomplete="off">
 						</div>					
 						<div class="btn_kinhlup">
 							<a href="javascript:void(0);" onclick="document.forms['frm_search'].submit();">
