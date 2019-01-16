@@ -122,6 +122,9 @@
 		margin-top: 28px;
 		float: left;
 		margin-left: 50px;
+		@media(max-width: 1024px){
+			margin-left: 40px;
+		}
 		.email_info_left{
 			float: left;
 			color: #ffe03d;
@@ -234,8 +237,12 @@
 		text-transform: uppercase;
 		font-size: 22px;
 		text-align: center;
-		background-color: $logo_bg;
+		background-color: #27282a;
 		padding: 25px 0px;
+		color: #ffffff;
+		@media(max-width: 1024px){
+			font-size: 15px;
+		}
 		@media(max-width: 320px){
 			font-size: 20px;
 		}
@@ -934,7 +941,7 @@
 		padding: 10px 10px;
 	}
 	.service-item{
-		background-color: #ebebeb;
+		background-color: #ffe03d;
 		padding: 10px;
 		margin-bottom: 10px;
 		@media(max-width: 992px){
@@ -951,7 +958,7 @@
 		}
 		.service-left-item{
 			float: left;
-			width:25%;		
+			width:30%;		
 			@media(max-width: 740px){
 				width: 15%;
 			}
@@ -988,6 +995,9 @@
 					text-transform: uppercase;
 					font-family: $f_bold;
 					font-size: 13px;
+					@media(max-width: 1024px){
+						font-size: 10px;
+					}
 				}
 			}
 			.service-price{
@@ -1038,11 +1048,11 @@
 					text-align: center;
 					a{
 						display: inline-block;
-						background-color: $logo_bg;							
+						background-color: #ebebeb;							
 						padding:5px 10px;
 						border-radius: 15px;
 						font-size: 12px;
-						border: 1px solid $logo_bg;
+						border: 1px solid #ebebeb;
 						@include p-web(transition,all 0.5s);	
 						&:hover{
 							background-color: $menu_bg;
@@ -1075,17 +1085,18 @@
 		}		
 		a{
 			display: block;
-			background-color: #dddddd;
+			background-color: #27282a;
 			text-align: center;
 			text-transform: uppercase;
 			font-family: $f_bold;
 			font-size: 18px;
 			padding: 10px 10px;
-			border-radius: 10px;
-			@include p-web(transition,all 0.5s);
+			border-radius: 5px;
+			color: #ffffff;
+			@include p-web(transition,all 0.5s);			
 			&:hover{
-				background-color: $menu_bg;
-				color: #ffffff;
+				background-color: #b4b4b4;
+				color: #000;
 			}
 		}
 	}
