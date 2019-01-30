@@ -13,5 +13,7 @@ require_once PLUGIN_PATH . DS .  'includes'. DS .'Controller.php';
 $zController;
 $zController = new zController();
 if(is_admin()){
+	require_once 'backend.php';
+	new Backend();
 	$zController->getController('/backend','AdminProductController');
 }

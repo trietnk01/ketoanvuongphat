@@ -1,4 +1,6 @@
-<?php unset( $_GET['q'] ); global $acf_pr;  $acf_pr = p_var_ar("acf_pr"); ?>
+<?php unset( $_GET['q'] ); global $acf_pr;  $acf_pr = p_var_ar("acf_pr"); 
+global $zController;
+?>
 <!DOCTYPE html>
 <html <?php language_attributes() ?> data-user-agent="<?php echo $_SERVER['HTTP_USER_AGENT'] ?>">
 <head>
@@ -35,7 +37,11 @@
 					</div>				
 				</div>
 				<div class="col-lg-10">
-					<form method="POST" action="" class="s_frm_search" name="frm_search">
+					<?php 
+					$page_id_search = $zController->getHelper('GetPageId')->get('_wp_page_template','search.php');     
+					$search_link = get_permalink($page_id_search);  
+					?>
+					<form method="POST" action="<?php echo @$search_link; ?>" class="s_frm_search" name="frm_search">
 						<div class="liu_search">
 							<input type="text" name="s" placeholder="Search" class="ktvp-txt-search" value="<?php echo @$_POST["s"]; ?>" autocomplete="off">
 						</div>					
