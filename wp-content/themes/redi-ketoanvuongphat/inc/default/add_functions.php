@@ -887,7 +887,7 @@ function portfolio_page_template( $template ) {
 	$term=get_term_by('id', $id,'category');
 	if(!empty($term)){
 		$slug=$term->slug;
-	}	
+	}		
 	if(strcmp($slug, 'dich-vu') == 0){
 		$file = get_template_directory() . '/template-01-service.php';
 		if(file_exists($file)){
